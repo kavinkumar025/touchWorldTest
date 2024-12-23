@@ -1,0 +1,6 @@
+<div class="d-flex vh-100">
+    <app-sidebar *ngIf="!isLoginPage" class="sidebar"></app-sidebar>
+    <div class="main-content" [class.full-width]="isLoginPage">
+        <router-outlet></router-outlet>
+    </div>
+</div>

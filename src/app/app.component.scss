@@ -1,0 +1,21 @@
+.d-flex {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20vw;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.main-content {
+    width: 80vw;
+}
+
+.main-content.full-width {
+    width: 100vw;
+    overflow-x: auto;
+}

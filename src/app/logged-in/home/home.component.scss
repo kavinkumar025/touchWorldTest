@@ -1,0 +1,34 @@
+.welcome-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.center-box {
+  height: 20vh;
+  width: 60vw;
+  background-color: #ffffff;
+  border: 3px solid #31A8DF;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #719b24df;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}

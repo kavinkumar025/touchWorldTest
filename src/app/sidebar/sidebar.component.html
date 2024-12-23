@@ -1,0 +1,20 @@
+<div class="sidebar vh-100 vw-25 bg-dark text-white p-3">
+    <h3 class="mb-4">Sidebar Menu</h3>
+    <ul class="list-unstyled">
+        <li class="mb-2">
+            <a routerLink="/home" class="text-decoration-none text-white">Home</a>
+        </li>
+        <!-- Employee List: Visible only to Admin/Super Admin -->
+        <li *ngIf="isAdmin" class="mb-2">
+            <a routerLink="/employee-listing" class="text-decoration-none text-white">Employee List</a>
+        </li>
+        <!-- API Data Table: Visible only to Admin/Super Admin -->
+        <li *ngIf="isAdmin" class="mb-2">
+            <a routerLink="/api-data-table" class="text-decoration-none text-white">API Data Table</a>
+        </li>
+        <!-- Logout -->
+        <li class="mt-4">
+            <button (click)="logout()" class="btn btn-outline-light w-100">Logout</button>
+        </li>
+    </ul>
+</div>
