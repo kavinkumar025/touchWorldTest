@@ -10,7 +10,7 @@ export class AuthGuard implements CanActivate {
 
   canActivate(): boolean {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
-    if (user && (user.role === 'admin' || user.role === 'super admin')) {
+    if (user && (user.role === 'admin' || user.role === 'user')) {
       return true;
     } else {
       this.router.navigate(['/login']);
